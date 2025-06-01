@@ -1,0 +1,196 @@
+/* Add these to the existing styles in the <style> tag */
+@media (max-width: 992px) {
+    .features {
+        justify-content: center;
+    }
+    .feature {
+        flex-basis: 45%;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+    .hero {
+        padding: 40px 15px;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+    .feature {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+    .author {
+        flex-direction: column;
+        text-align: center;
+    }
+    .author img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    .hero img {
+        max-width: 200px;
+    }
+    .testimonials blockquote {
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+
+
+/* qrcode page  */
+
+/* Add these to the payment page styles */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 20px;
+    }
+    .qr-code {
+        padding: 15px;
+    }
+    .qr-code img {
+        width: 180px;
+    }
+    .steps {
+        margin: 20px 0;
+    }
+    .step {
+        margin-bottom: 10px;
+    }
+    .payment-methods {
+        flex-wrap: wrap;
+    }
+    .payment-method {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+}
+
+
+/* login page  */
+
+
+/* Add these to the login page styles */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+        margin: 20px;
+    }
+    .logo {
+        width: 120px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+    input {
+        padding: 10px;
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .message {
+        font-size: 14px;
+    }
+}
+
+/* download page  */
+
+/* Add these to the download page styles */
+@media (max-width: 992px) {
+    .container {
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .book-cover img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+    .header img {
+        max-width: 120px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .download-section {
+        padding: 20px;
+    }
+    .download-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    .formats {
+        flex-wrap: wrap;
+    }
+    .bonus-item {
+        flex-direction: column;
+    }
+    .bonus-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    .book-cover img {
+        max-width: 150px;
+    }
+    .format-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .download-btn {
+        width: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .download-btn:hover {
+        /* hover styles only for devices that support hover */
+    }
+}
+

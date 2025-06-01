@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Market Mastery Pro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #1a237e;
+            margin-bottom: 30px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1a237e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #283593;
+        }
+        .message {
+            margin-top: 20px;
+            color: #666;
+        }
+        .message a {
+            color: #1a237e;
+            text-decoration: none;
+        }
+            .cta-button {
+            background-color: #ffab00;
+            color: #1a237e;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #ffd600;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="hm.traders profile img.jpg" alt="Market Mastery Pro" class="logo">
+        <h1>Member Login</h1>
+        
+        <form id="loginForm">
+            <input type="text" id="accessCode" placeholder="Access Code (from SMS)" required>
+            <input type="password" id="password" placeholder="Password (from SMS)" required>
+            <button type="submit">Login</button>
+        </form>
+        
+        <div class="message">
+            Didn't receive your access code? <a href="mailto:hm.com">Contact support</a>
+        </div>
+
+           <a href="index.html">
+            <button class="cta-button">Back to home ↩️</button>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const accessCode = document.getElementById('accessCode').value;
+            const password = document.getElementById('password').value;
+            
+            // Here you would typically validate with your backend
+            // For demo purposes, we'll simulate a successful login
+            if(accessCode=='00123' && password=="qpthn00123"){
+                alert('Login successful! Redirecting to your download...');
+                // In a real implementation, you would redirect to the download page
+                window.open("download.html");
+            } else {
+                alert('Please enter valid access code and password');
+            }
+        });
+    </script>
+</body>
+</html>
